@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ts'ehlo Lits'itso - Personal Portfolio</title>
+        <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+margin: 0;
+padding: 0;
+background: #f8f9fa;
+color: #1a1a1a;
+}
+header {
+background: linear-gradient(135deg, #4361ee, #3a0ca3);
+color: #fff;
+padding: 40px 0 30px 0;
+text-align: center;
+}
+nav {
+background: #2b2d42;
+display: flex;
+justify-content: center;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+padding: 18px 28px;
+font-weight: 500;
+transition: all 0.3s ease;
+}
+nav a:hover {
+background: rgba(255, 255, 255, 0.1);
+transform: translateY(-2px);
+}
+main {
+max-width: 1000px;
+margin: 40px auto;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+padding: 40px;
+}
+section {
+margin-bottom: 50px;
+}
+h1, h2, h3 {
+color: #2b2d42;
+}
+.profile-img {
+width: 140px;
+height: 140px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 20px;
+border: 4px solid #4361ee;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.skills-list, .hobbies-list {
+display: flex;
+flex-wrap: wrap;
+gap: 14px;
+list-style: none;
+padding: 0;
+}
+.skills-list li, .hobbies-list li {
+background: #edf2fb;
+color: #2b2d42;
+padding: 10px 18px;
+border-radius: 24px;
+font-size: 15px;
+font-weight: 500;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 24px;
+}
+.gallery-item {
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+padding: 24px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.testimonial {
+background: #f8f9fa;
+border-left: 4px solid #4361ee;
+padding: 24px;
+margin: 24px 0;
+border-radius: 8px;
+font-style: italic;
+position: relative;
+}
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 20px;
+max-width: 500px;
+}
+.contact-form input, .contact-form textarea {
+padding: 12px;
+border: 1px solid #dee2e6;
+border-radius: 6px;
+font-size: 16px;
+transition: border 0.3s ease;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+border-color: #4361ee;
+outline: none;
+}
+.contact-form button {
+background: linear-gradient(135deg, #4361ee, #3a0ca3);
+color: #fff;
+border: none;
+padding: 14px;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+font-weight: 600;
+transition: transform 0.2s ease;
+}
+.contact-form button:hover {
+transform: translateY(-2px);
+}
+.contact-info {
+margin-top: 16px;
+}
+.social-links a {
+color: #2b2d42;
+margin-right: 20px;
+font-size: 24px;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.social-links a:hover {
+color: #4361ee;
+transform: scale(1.1);
+}
+footer {
+background: #2b2d42;
+color: #fff;
+text-align: center;
+padding: 24px 0;
+margin-top: 60px;
+}
+.footer-links a {
+color: #fff;
+margin: 0 16px;
+text-decoration: none;
+font-weight: 500;
+transition: all 0.3s ease;
+}
+.footer-links a:hover {
+color: #f8f9fa;
+text-decoration: underline;
+}
+@media (max-width: 768px) {
+main {
+padding: 24px;
+margin: 20px;
+}
+nav {
+flex-direction: column;
+align-items: center;
+}
+nav a {
+width: 100%;
+text-align: center;
+}
+.gallery {
+grid-template-columns: 1fr;
+}
+}  }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://scontent.fmsu1-1.fna.fbcdn.net/v/t39.30808-1/459096115_878524414187535_9166840200590380787_n.jpg?stp=c0.0.960.960a_dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHa1UQkotxJE5ffxkwh9LvTImsiS8fwRFsiayJLx_BEWxpQdGHwdQd1FUKUWqx5J9cUv3_BGJj9wJ2uAElUTl2z&_nc_ohc=GX-xAZTHg1cQ7kNvwFt-mLB&_nc_oc=AdnFBbrVkxJKOAFKynL6zHKDz3AnpEzXd5kapQwV8nMAzXU0xDYNXD2AZcpG-ODWo68&_nc_zt=24&_nc_ht=scontent.fmsu1-1.fna&_nc_gid=NSTr2zaXRfCTQFic1nG_-w&oh=00_AfFstbelQTmtKWqTS7zJPzwaJfL5_e0ys4daOlLpVdOiOw&oe=68195767" alt="Ts'ehlo Lits'itso" class="profile-img">
+        <h1>Ts'ehlo Lits'itso - Personal Portfolio</h1>
+        <p>Journalist | Artist Manager | Art Director | Content Creator</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Introduction</h2>
+            <p>Bonjour! Je suis <strong>Ts'ehlo Lits'itso</strong>,Je suis un journaliste passionné, spécialisé dans la création de récits percutants, la production de contenu captivant et l'art de raconter des histoires qui résonnent. Maîtrise de l'écriture investigative, du storytelling et des interviews approfondies me permet d'apporter vérité et authenticité à chaque article. Au-delà du journalisme, je me distingue dans l'organisation d'événements - créant des expériences marquantes qui donnent vie aux histoires - et dans le management d'artistes, où j'aide les talents à trouver leur voix et leur public. </p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate journalist with a relentless curiosity for uncovering stories that spark change. With years of experience in reporting, digital media, and investigative writing, I dive deep into current affairs, social issues, and untold human narratives—always with truth and authenticity at the core.</p>
+
+<p>Beyond journalism, I thrive in creative chaos: I’m an event coordinator who crafts immersive experiences, a music composer who scores stories in melodies, and an art director who believes visuals should speak as loudly as words. My love for cannabis culture inspires nuanced conversations about legalization, wellness, and counterculture.</p>
+
+<p>When I’m not chasing deadlines, you’ll find me experimenting in the kitchen—whether baking sourdough or spicing up West African dishes—or curating playlists that blend Afrobeat, jazz, and electronic sounds. Storytelling isn’t just my job; it’s how I experience the world.
+
+</p>
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li>Investigative Reporting</li>
+                <li>Music Composition</li>
+                <li>Digital Journalism and Content Creation</li>
+                <li>Social Media Management & Strategy</li>
+                <li>Cooking and Baking</li>
+                <li>Editing and Proofreading</li>
+                <li>Public Speaking and Storytelling</li>
+                <li>Event Curation and Cordination</li>
+            </ul>
+            <h3>Education & Experience</h3>
+            <ul>
+                <li><strong>BA in Broadcasting and Journalism</strong></li>
+                <li><strong>Professional Experience:</strong>YouTube T.V and R.E.D Records artist management</li>
+                <li><strong>Awards:</strong> Music Composer of the year (LMA) and Content creator of the year (LMA)</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <h3> Composed Music</h3>
+                    <p><a href="#" target="_blank">https://on.soundcloud.com/jMEJURcVwKfZFt4k9.</a></p>
+                </div>
+                <div class="gallery-item">
+                    <h3>Feature Article</h3>
+                    <p><a href="#" target="_blank">https://www.facebook.com/photo.php?fbid=1678064129222337&set=pb.100010562979195.-2207520000&type=3.</a></p>
+                </div>
+            </div>
+            <h3>Hobbies & Personal Interests</h3>
+            <ul class="hobbies-list">
+                <li>Travel & Exploring Country Landscape</li>
+                <li>Reading Books and Journals</li>
+                <li>Attending Music and Food Events</li>
+                <li>Photography</li>
+                <li>Composing music</li>
+            </ul>
+            <h3>Social Proof & Testimonials</h3>
+            <div class="testimonial">
+                <strong>Aba October (Artist under management):</strong><br>
+                "Mr. Ts'ehlo isn’t just a journalist—he’s a storyteller who ignites change. With razor-sharp investigative instincts and a gift for narrative depth, his reporting on social issues doesn’t just inform; it provokes action. His pieces strike a rare balance between hard-hitting facts and human vulnerability, making complex topics resonate with audiences across divides.
+
+Beyond the byline, Ts'ehlo’s creative brilliance shines through his event coordination—curating spaces where stories leap off the page and into lived experience—and his art direction, which gives visual power to the voices he amplifies. A cannabis advocate, culinary artist, and music composer, he brings the same fierce authenticity to every project, whether exposing systemic injustice or scoring a documentary.
+
+To work with Ts'ehlo is to witness journalism at its most alive: urgent, nuanced, and unforgettable."
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery of My Work</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://scontent.fmsu1-1.fna.fbcdn.net/v/t39.30808-6/476158420_2380429422319134_3591073525189773086_n.jpg?stp=c72.0.720.720a_dst-jpg_s206x206_tt6&_nc_cat=111&ccb=1-7&_nc_sid=92e838&_nc_ohc=u5DrSttTRB8Q7kNvwEm0qN5&_nc_oc=AdnNPEYh6ny8UrT0ffxV0zLDZO_uEopdFVJ9FLDbgIKj6AWs8dR5n8qDgmTF0oA4XJQ&_nc_zt=23&_nc_ht=scontent.fmsu1-1.fna&_nc_gid=EHx_2wqMp92hj3d9P-ZN0w&oh=00_AfFZzRu4XzARSD0krTYKWhQSTH9rxWNU9DbaWSY8aRnnHQ&oe=68195A2E">
+                    <p>ARTISTS UNDER MANAGEMENT</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmsu1-2.fna.fbcdn.net/v/t39.30808-6/493029933_3681908788620706_7813339719277609063_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHsZ83rBrDasFUalssHw3kIroodZdzC7R6uih1l3MLtHv5_S4mDe1IU_aGCMFSJijgH_i4sMpUTzhttkxBMbXXI&_nc_ohc=8a6ZEAd6BRcQ7kNvwH8PKZ-&_nc_oc=AdkXllMO0Yg4cLRjWUHD-3YjgoDQ9q4Q40r0BmLJV7VIRNCi_RTa2LZ_G2k6PCQKq9s&_nc_zt=23&_nc_ht=scontent.fmsu1-2.fna&_nc_gid=ek6uOS2E7cm2HzwHxqw93A&oh=00_AfH0KlPMYThozLqgoGmBdmnLBbFNOXiHfXsdln0gpbOGng&oe=68192A3F">
+                    <p>EVENTS CORDINATION</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fmsu1-1.fna.fbcdn.net/v/t39.30808-1/293583033_421008963303274_8031914122257955561_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=gW3sZhk9GksQ7kNvwH7vsJa&_nc_oc=Adm4x-BtiP7ayLQPISZvEEG0t8YbI_lBifvAY1AiTDOxNvbdBT1FVR0kabhKZdX9uA0&_nc_zt=24&_nc_ht=scontent.fmsu1-1.fna&_nc_gid=EIaU_N3udjIRJ749Cjcr_A&oh=00_AfH39EDdeKH193bbhR7u1KK3Jq30fSb0lg-5wVlOFmyASg&oe=68191FAE">
+                    <p>CONTENT CREATION</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form class="contact-form" action="tsehloblessings@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +266 63159093 | +266 2231694</p>
+                <p><strong>Email:</strong> tsehloblessings@gmail.com | litsitsotsehlo@gmail.com |tsehlolitsitso@soofiainternational.org </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/tsehlo.litsitso/about" title="Facebook" target="_blank">&#x1F5E8; Facebook: Lee Tsehlo</a>
+<a href="https://www.instagram.com/thorne_blessings/" title="Instagram" target="_blank">&#x1F5E8; Instagram: CRAZYVYBZ</a>
+
+  <a href="https://x.com/LitsitsoB" title="X.com" target="_blank">&#x1F5E8; X.com: Crazyvybz</a>
+             
+      <a href="https://facebook.com/" title="YouTube" target="_blank">&#x1F5E8; YouTube: GRAZYVIBES 303</a>     
+ </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#portfolio">Portfolio</a> |
+            <a href="#about">About Me</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#gallery">Social Media</a>
+        </div>
+        <p>TS'EHLO L.B ©2025 . All rights reserved</p>
+    </footer>
+</body>
+</html>
